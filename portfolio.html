@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deshmukh Diagnostic Center - Sadarpur, Himachal Pradesh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-900 selection:bg-emerald-100 selection:text-emerald-900">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <div class="bg-emerald-600 p-1.5 rounded-lg">
+                        <i data-lucide="heart-pulse" class="text-white w-6 h-6"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900">
+                        Deshmukh <span class="text-emerald-600">Diagnostics</span>
+                    </span>
+                </div>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="text-sm font-medium text-slate-600 hover:text-emerald-600 transition-colors">Home</a>
+                    <a href="#services" class="text-sm font-medium text-slate-600 hover:text-emerald-600 transition-colors">Services</a>
+                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-emerald-600 transition-colors">About</a>
+                    <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-emerald-600 transition-colors">Contact</a>
+                    <button onclick="window.location.href='tel:08219632330'" class="bg-emerald-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-200">
+                        Call Now
+                    </button>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-900">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 overflow-hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a href="#home" class="block text-base font-medium text-slate-600 hover:text-emerald-600">Home</a>
+                <a href="#services" class="block text-base font-medium text-slate-600 hover:text-emerald-600">Services</a>
+                <a href="#about" class="block text-base font-medium text-slate-600 hover:text-emerald-600">About</a>
+                <a href="#contact" class="block text-base font-medium text-slate-600 hover:text-emerald-600">Contact</a>
+                <button onclick="window.location.href='tel:08219632330'" class="w-full bg-emerald-600 text-white px-5 py-3 rounded-xl text-sm font-semibold">
+                    Call Now
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full -z-10">
+                <div class="absolute top-[-10%] right-[-5%] w-[40%] h-[60%] bg-emerald-50 rounded-full blur-3xl opacity-60"></div>
+                <div class="absolute bottom-[-10%] left-[-5%] w-[30%] h-[50%] bg-blue-50 rounded-full blur-3xl opacity-60"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-6">
+                            <i data-lucide="shield-check" class="w-4 h-4"></i>
+                            4.8 ★ (43 Reviews) • Sadarpur, HP
+                        </div>
+                        <h1 class="text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] mb-6">
+                            Advanced X-Ray & Diagnostics in <span class="text-emerald-600">Sadarpur</span>
+                        </h1>
+                        <p class="text-lg text-slate-600 mb-8 max-w-lg leading-relaxed">
+                            Deshmukh Diagnostic Center provides high-quality X-ray and diagnostic services in Sadarpur, Himachal Pradesh. Trusted by the community for accurate and timely medical reports.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <button onclick="window.location.href='#services'" class="bg-emerald-600 text-white px-8 py-4 rounded-full font-bold hover:bg-emerald-700 transition-all shadow-xl shadow-emerald-200 flex items-center gap-2">
+                                View All Tests <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                            </button>
+                            <button class="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-full font-bold hover:bg-slate-50 transition-all">
+                                Our Packages
+                            </button>
+                        </div>
+
+                        <div class="mt-12 grid grid-cols-3 gap-8 border-t border-slate-100 pt-8">
+                            <div>
+                                <div class="text-2xl font-bold text-slate-900">15+</div>
+                                <div class="text-sm text-slate-500">Years Experience</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-slate-900">50k+</div>
+                                <div class="text-sm text-slate-500">Happy Patients</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-slate-900">500+</div>
+                                <div class="text-sm text-slate-500">Tests Available</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-slate-200 aspect-[4/3]">
+                            <img src="https://picsum.photos/seed/diagnostic-center/800/600" alt="Diagnostic Center Laboratory" class="w-full h-full object-cover" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl z-20 hidden sm:block border border-slate-100">
+                            <div class="flex items-center gap-4">
+                                <div class="bg-emerald-100 p-3 rounded-xl">
+                                    <i data-lucide="clock" class="text-emerald-600 w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-bold text-slate-900">Home Collection</div>
+                                    <div class="text-xs text-slate-500">Available 24/7</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-3">Our Expertise</h2>
+                    <h3 class="text-4xl font-bold text-slate-900 mb-4">Comprehensive Diagnostic Services</h3>
+                    <p class="text-slate-600 max-w-2xl mx-auto">
+                        We provide a wide range of diagnostic tests using the latest technology to ensure the highest standards of medical care.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all group">
+                        <div class="bg-blue-50 text-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="flask-conical" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Pathology</h4>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Comprehensive blood, urine, and tissue analysis with high accuracy.</p>
+                        <a href="#" class="inline-flex items-center text-sm font-bold text-emerald-600 hover:gap-2 transition-all">
+                            Learn More <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all group">
+                        <div class="bg-emerald-50 text-emerald-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="activity" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Radiology</h4>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Advanced X-Ray and imaging services for precise internal diagnosis.</p>
+                        <a href="#" class="inline-flex items-center text-sm font-bold text-emerald-600 hover:gap-2 transition-all">
+                            Learn More <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all group">
+                        <div class="bg-rose-50 text-rose-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="heart-pulse" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Cardiology</h4>
+                        <p class="text-slate-600 mb-6 leading-relaxed">ECG and heart health monitoring by specialized technicians.</p>
+                        <a href="#" class="inline-flex items-center text-sm font-bold text-emerald-600 hover:gap-2 transition-all">
+                            Learn More <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-4">
+                                <img src="https://picsum.photos/seed/doctor1/400/500" alt="Medical Professional" class="rounded-3xl object-cover h-64 w-full shadow-lg" referrerpolicy="no-referrer">
+                                <img src="https://picsum.photos/seed/lab1/400/300" alt="Laboratory" class="rounded-3xl object-cover h-48 w-full shadow-lg" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="space-y-4 pt-8">
+                                <img src="https://picsum.photos/seed/lab2/400/300" alt="Testing Equipment" class="rounded-3xl object-cover h-48 w-full shadow-lg" referrerpolicy="no-referrer">
+                                <img src="https://picsum.photos/seed/doctor2/400/500" alt="Doctor Consultation" class="rounded-3xl object-cover h-64 w-full shadow-lg" referrerpolicy="no-referrer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-3">About Deshmukh Diagnostics</h2>
+                        <h3 class="text-4xl font-bold text-slate-900 mb-6 leading-tight">Your Trusted Partner in Medical Excellence</h3>
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                            Founded with a vision to provide accessible and high-quality diagnostic services, Deshmukh Diagnostic Center has become a cornerstone of healthcare in our community. We combine medical expertise with compassionate care.
+                        </p>
+                        
+                        <div class="space-y-4 mb-10">
+                            <div class="flex items-center gap-3">
+                                <div class="bg-emerald-100 p-1 rounded-full"><i data-lucide="check-circle-2" class="text-emerald-600 w-5 h-5"></i></div>
+                                <span class="text-slate-700 font-medium">Fully Automated Laboratory Systems</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="bg-emerald-100 p-1 rounded-full"><i data-lucide="check-circle-2" class="text-emerald-600 w-5 h-5"></i></div>
+                                <span class="text-slate-700 font-medium">Highly Qualified Pathologists & Radiologists</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="bg-emerald-100 p-1 rounded-full"><i data-lucide="check-circle-2" class="text-emerald-600 w-5 h-5"></i></div>
+                                <span class="text-slate-700 font-medium">Quick Turnaround Time for Reports</span>
+                            </div>
+                        </div>
+
+                        <button class="bg-slate-900 text-white px-8 py-4 rounded-full font-bold hover:bg-slate-800 transition-all shadow-xl shadow-slate-200">
+                            Learn Our Story
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & FAQ Section -->
+        <section id="contact" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-emerald-600/10 -skew-x-12 translate-x-1/4"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <div>
+                        <h2 class="text-sm font-bold text-emerald-400 uppercase tracking-widest mb-3">Get In Touch</h2>
+                        <h3 class="text-4xl font-bold mb-8">We're Here to Help You</h3>
+                        <p class="text-slate-400 mb-12 text-lg leading-relaxed">
+                            Have questions about our tests or need to book a home collection? Reach out to us and our team will assist you promptly.
+                        </p>
+
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-6">
+                                <div class="bg-slate-800 p-4 rounded-2xl"><i data-lucide="map-pin" class="text-emerald-400 w-6 h-6"></i></div>
+                                <div>
+                                    <div class="text-lg font-bold mb-1">Our Location</div>
+                                    <div class="text-slate-400">RPGMC Rd, in front of Dr Rpgmc,<br>near Hanuman Ji Mandir, Tanda,<br>Sadarpur, Himachal Pradesh 176002</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-6">
+                                <div class="bg-slate-800 p-4 rounded-2xl"><i data-lucide="phone" class="text-emerald-400 w-6 h-6"></i></div>
+                                <div>
+                                    <div class="text-lg font-bold mb-1">Call Us</div>
+                                    <div class="text-slate-400">+91 82196 32330</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-8 lg:p-12 text-slate-900 shadow-2xl">
+                        <h4 class="text-2xl font-bold mb-8">Frequently Asked Questions</h4>
+                        <div class="space-y-6">
+                            <div class="border-b border-slate-100 pb-4 last:border-0">
+                                <h5 class="font-bold text-slate-900 mb-2 flex items-start gap-2">
+                                    <span class="text-emerald-600">Q.</span> What documents are required for a test?
+                                </h5>
+                                <p class="text-slate-600 text-sm leading-relaxed pl-6">Please bring your doctor's prescription and a valid government-issued ID proof for registration.</p>
+                            </div>
+                            <div class="border-b border-slate-100 pb-4 last:border-0">
+                                <h5 class="font-bold text-slate-900 mb-2 flex items-start gap-2">
+                                    <span class="text-emerald-600">Q.</span> Is fasting required for blood tests?
+                                </h5>
+                                <p class="text-slate-600 text-sm leading-relaxed pl-6">For tests like Sugar or Lipid Profile, 10-12 hours of fasting is usually required.</p>
+                            </div>
+                            <div class="border-b border-slate-100 pb-4 last:border-0">
+                                <h5 class="font-bold text-slate-900 mb-2 flex items-start gap-2">
+                                    <span class="text-emerald-600">Q.</span> How long does it take to get reports?
+                                </h5>
+                                <p class="text-slate-600 text-sm leading-relaxed pl-6">Most routine reports are available within 4-6 hours.</p>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-8 border-t border-slate-100">
+                            <p class="text-sm text-slate-500 text-center">
+                                Still have questions? <a href="tel:08219632330" class="text-emerald-600 font-bold hover:underline">Call us directly</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="space-y-6">
+                    <div class="flex items-center gap-2">
+                        <div class="bg-emerald-600 p-1.5 rounded-lg">
+                            <i data-lucide="heart-pulse" class="text-white w-6 h-6"></i>
+                        </div>
+                        <span class="text-xl font-bold tracking-tight text-slate-900">
+                            Deshmukh <span class="text-emerald-600">Diagnostics</span>
+                        </span>
+                    </div>
+                    <p class="text-slate-500 leading-relaxed">Leading the way in medical excellence through precision diagnostics.</p>
+                </div>
+
+                <div>
+                    <h5 class="text-slate-900 font-bold mb-6">Working Hours</h5>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between">
+                            <span class="text-slate-500">Mon - Sat</span>
+                            <span class="text-slate-900 font-medium">8:00 AM - 5:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-slate-500">Sunday</span>
+                            <span class="text-slate-900 font-medium">Closed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-200 pt-8 text-center">
+                <p class="text-slate-500 text-sm">© 2026 Deshmukh Diagnostic Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('glass-nav', 'shadow-md');
+                navbar.classList.remove('py-5');
+                navbar.classList.add('py-3');
+            } else {
+                navbar.classList.remove('glass-nav', 'shadow-md');
+                navbar.classList.add('py-5');
+                navbar.classList.remove('py-3');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
